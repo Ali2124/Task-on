@@ -1,0 +1,32 @@
+import os
+
+directory = "Documents"
+parent_directory = "C:\\Users\\Lenovo\\Documents\\"
+path = os.path.join(parent_directory, directory)
+os.mkdir(path)
+print ("Directory '%s' created" % directory)
+-------
+import os
+
+directory = "Documents"
+parent_directory = "C:\\Users\\Lenovo\\Documents\\"
+path = os.path.join(parent_directory, directory)
+
+os.rmdir(path)
+print ("Directory '%s' deleted" % directory)
+-------
+import os
+
+directory = "Documents"
+parent_directory = "C:\\Users\\Lenovo\\Documents\\"
+path = os.path.join(parent_directory, directory)
+
+dest = "C:\\Users\\Lenovo\\Documents\\LabWork\\"
+os.rename(path, dest)
+print ("Renamed ok")
+
+-----
+import os
+
+some_other_dest = "C:\\Users\\Lenovo\\"
+os.listdir(some_other_dest)
