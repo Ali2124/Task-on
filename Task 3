@@ -1,0 +1,4 @@
+def decorator(x):
+    return x.swapcase()
+
+print(decorator(input()))
